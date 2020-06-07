@@ -1,0 +1,72 @@
+Big Data and Data Mining
+
+Big Data refers to the dynamic, large and disparate volumes of data being created by people, tools, and machines. It requires new, innovative, and scalable technology to collect, host, and analytically process the vast amount of data gathered in order to derive real-time business insights that relate to consumers, risk, profit, performance, productivity management, and enhanced shareholder value.
+
+5 V's:
+1.Velocity - Speed at which data accumulates
+	
+2.Volume - Scale of the data
+	Drivers: Increase in data sources, Higher resolution sensors, Scalable infrastracture
+3.Variety - Diversity of the Data
+	Drivers: Mobile tech, Social media, Wearable tech, Geo tech, Video
+4.Veracity - Quality and origin of Data
+	Attributes: Consistency, Completeness, Integrity, Ambiguity
+	Drivers: Cost, Need for traceability
+	Data must be Catgorized, Analyzed and Visualized
+5.Value - Ability and need to turn Data into value
+	
+Tools:
+Apache Spark
+Hadoop
+
+Processes:
+Mapper
+Reducer
+
+Cost-benefit trade-off for the desired level of accuracy is always instrumental in determining the goals and the scope of the data mining.
+
+The type of data, its size, and frequency of collection have a direct bearing on the cost of data mining.
+
+In the preprocessing stage, yu identify the irrelevant attributes of data and erroneous aspects of the data set. You ust develop a formal method of dealing with missing data and determine weather the data is missing randomly or systematically.
+
+An important consideration in data mining is to reduce the number of attributes needed to explain the phenomena which may require transforming data.
+
+Data reduction alghorithms:
+Principal Component Analysis
+
+Data safety and privacy should be primary concers for storing data. Data storage scheme should facilitate efficiently reading from and writing to the database.
+
+After data is approprietly processed, transformed, and stored, it is subject to data mining. <this step covers data analysis methods (parametric and non-parametric), and machine-learning algorithms.
+
+Formal evaluation could include testing the predictive capabilities of the models on observed data to see how effective and efficient the alghorithms have been in reproducing data. This is known as in-sample forecast.
+
+Data mining and evaluating the results becomes tan iterative process such that the analysts use better and improved alghorithms to improve the quality of results generated.
+
+Big Data - data sets that are so massive, so quickly built and so varied that they defy traditional analysis methods
+
+Data mining - process of automatically searching and analyzing data. It involves preprocessing the data to prepare it and transforming it into an appropriate format.
+
+Machine learning - subset of AI that uses computer algorithms to analyze data and make intelligent decisions based on what it is learned
+
+Deep learning - specialized subset of machine learning that uses layered neural networks to simulate human decisíon-making
+
+Neral network in AI is a collection of small computing units called neurons that take incoming data and learn to make decisions over time. They are often layer deep and are the reason deep learning alghorithms become more efficient as the data sets increase in volume
+
+AI includes everything that allows computers to learn how to solve problems and make intelligent decisions.
+
+Data Science is the process and method for extracting knoweledge and insights from large volumes of disparate data.
+
+Neural networks - computationally very intensive
+
+Applications of Machine Learning:
+Recommender systems
+Classifications
+Cluster analysis
+Predictive analysis (Decision trees, Bayesian analysis, naive Bayes)
+Fraud detection
+
+Regression models - discovered by Sir Frances Galton in 1886. They are the forefront of analyzing consumer behaviour, firm productivity, and competetiveness between public ana private sector entities
+
+
+
+
