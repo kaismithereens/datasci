@@ -26,4 +26,77 @@ Data Science, by David Donoho:
 5. Data Visualisation
 6. Science about Data Science
 
+Python 
+- high level language
+- interpreted language
+- dynamically typed language
 
+Python interpreter is stateful. YOur variables exist between cells.
+
+Functions in Python:
+1. Since there is no typing, you don't have to set your return time
+2. You don't have to set user return statement at all. There is a special value called NONE that is returned which represents the absence of value
+3. You can have default values for parameters. We can set the last parametres to be none by default which enables you to overload the function signature without rewriting it.
+4. You can assign a variable to a function, and you can pass that variable into other functions allowing some basic functional programming
+
+Types in Python:
+The Python language has a built-in function called type which will show you what type a give reference is.
+Common types: strings, NONE, integers, floating point, function
+Typed objects have properties (data or functions).
+Collections: tuples, lists, dictionaries
+
+Tuple - immutable sequence of variables. It can have mixed types for the content
+Lists - mutable sequence of variables that can change its lenght, number of elements and the element values
+
+Both lists and tuples are iterable types, and you can use a for loop to go through all their elements, or you can use an indexing operator. 
+Common functions include: len, min, max, +, *, in
+The most interesting operations you can do with lists are called slicing.
+
+All strings are actually just lists of characters so slicing works on them.
+
+Indexing can be negative. So x[-1] gets the last letter of string x.
+
+Manipulationg strings -  slicing and splitting based on substrings (regular expression evaluation).
+
+The string type has an associated function called split. This function breaks the string up into substrings based on a simple pattern, and returns a list.
+
+Dictionaries - labeled collections which have no ordering. For each value you insert into the dictionary, you must also give a key to get that value out. dict{key : value}
+
+You can iterate over all of the items in a dictionary in a number of ways:
+1. Iterate over all of the keys
+2. Iterate over the values
+3. Iterate over both the values and the keys using the item's function -> called UNPACKING
+
+Strings 
+- unicode based
+- in addition to unicode, it uses a special language for formatting the output of strings
+
+String manipulation is a big part of data cleaning.
+
+Python Date and Time:
+One of the most common legacy methods for storing the date and time in online transaction systems is based on the offeśet from the epoch - January 1, 1970.
+
+You can get the current time since the epoch using the time module. You can then create a time stamp using the from time stamp function on the date time object.
+Date time objects allow for simple math using time deltas, commonly used in data science for creating sliding windows.
+
+Objects in Python
+Python does have classes which can have attached methods, and be instantiated as objects.
+
+You can define a class using a class keyword, and ending with a colon. Anything indented below is within the scope of the class.
+Classes in Python are generally named using camel case.
+
+To define a method, you just write it as you would write a function. To have access to the instance which a method is being invoked upon, you must include self in the method signature.
+
+If you want to refer to instance variables set on the object, you prepend them with the word self, with a full stop.
+
+Objects in Python do not have private or protected members.
+
+There is no need for an explicit constructor when creating objects in Python. YOu can add a constructor if you want to by declaring the __init__ method.
+
+Functional programming is a programming paradigm in which could change through execution of a given function.
+
+The map function is one of the basis for functional programming in Python. All iterable arguments are unpacked together, and passed into the given function. The map function returns a map object.
+Maps are iterable, so we can use a for loop to look at all of the values in the map.
+
+Lambda - annonymous functions
+The return of a lambda is a function reference.
