@@ -31,7 +31,7 @@ Python
 - interpreted language
 - dynamically typed language
 
-Python interpreter is stateful. YOur variables exist between cells.
+Python interpreter is stateful. Your variables exist between cells.
 
 Functions in Python:
 1. Since there is no typing, you don't have to set your return time
@@ -44,6 +44,9 @@ The Python language has a built-in function called type which will show you what
 Common types: strings, NONE, integers, floating point, function
 Typed objects have properties (data or functions).
 Collections: tuples, lists, dictionaries
+
+Immutable types: numbers, strings, tuples
+Mutable types: lists, dictionaries, sets
 
 Tuple - immutable sequence of variables. It can have mixed types for the content
 Lists - mutable sequence of variables that can change its lenght, number of elements and the element values
@@ -91,12 +94,41 @@ If you want to refer to instance variables set on the object, you prepend them w
 
 Objects in Python do not have private or protected members.
 
-There is no need for an explicit constructor when creating objects in Python. YOu can add a constructor if you want to by declaring the __init__ method.
+There is no need for an explicit constructor when creating objects in Python. You can add a constructor if you want to by declaring the __init__ method.
 
 Functional programming is a programming paradigm in which could change through execution of a given function.
 
-The map function is one of the basis for functional programming in Python. All iterable arguments are unpacked together, and passed into the given function. The map function returns a map object.
+The map function is one of the basis for functional programming in Python. 
+*map(function, iterable)*
+All iterable arguments are unpacked together, and passed into the given function. The map function returns a map object.
 Maps are iterable, so we can use a for loop to look at all of the values in the map.
 
 Lambda - annonymous functions
+*lambda arguments : expression*
 The return of a lambda is a function reference.
+
+Sequences are structures we can iterate over.
+List comprehension - we start the list comprehension with the value we want in the list. Then we put it in the for-loop and finally we add any condition clauses.
+
+Numpy
+np.array - create a numpy array
+.shape - find the dimensions of the array
+.arange - returns evenly spaces values within a given interval
+.linspace - returns evenly spaces numbers over a specified interval
+.reshape - returns an array with the same data but with new shape
+.resize - changes the shape and size of array
+.ones - returns new array of given shape and type, filled with ones
+.zeros - returns new array of given shape and type, filled with zeroes
+.eye - returns 2-D array with ones on the diagonal
+.diag - extracts a diagonal or constructs a diagonal array
+.repeat - repeat elements of an array
+.vstack - stack arrays in sequence vertically
+.hstack - stack arrays in sequence horizontally
+.dot - dot product
+.T - transposing the array
+.dtype - see data type of the elements in the array
+.astype - cast to specific type
+.copy - create a copy of the original array
+
+zip - use zip to iterate over multiple iterables
+
