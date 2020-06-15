@@ -1,0 +1,130 @@
+pandas
+-created in 2008 by Wes McKinney
+
+resources:
+- Python for Data Analysis: Wes McKinney (2012)
+- Learning the Pandas Library: Matt Harrisson
+- planetpython.org
+- dataskeptic.com: Kyle Polich
+
+The series
+- core data structure
+- cross between a list and a dictionary. 
+Two columns of data:
+1) Special index
+2) Actual data, can be retrieved using the .name attribute
+
+You can create a series by passing in a list of values. Pandas automatically assigns an index starting with zero and sets a name of the series to None.
+
+In Python we have the none type to indicate a lack of data.
+For missing string, pandas inserts None and uses the type object.
+For missing number, pandas automatically converts it to NaN - special floating point value.
+
+NAN is not none.
+You can't do an equality test of NAN to itself. It is always false.
+You need to use special functions to test for the presence of NaN (np.isnan)
+
+Series can be created from dictionary data. Index is automatically assigned to the keys of the dictionary.
+Pandas will ignore all keys from your dictionary which are not in your dictionary key list.
+
+Querying a Series
+Panda Series can be queried by the index position or the index label.
+To query by numeric location, starting at zero, use the iloc attribute. To query by data, use the loc attribute.
+If you pass in an integer parameter, the operator will behave as if you want it to query via the iloc attribute.
+If you pass in an object, it will query as if you wanted to use the label based loc attribute.
+
+Vectorization
+- works with most of the functions in the NumPy library
+
+Cellular magic function
+%% - modify a raptor code in the current Jupyter cell
+-timeit
+
+Broadcasting
+- applying an operation to every value in the series, changing the series
+
+Index values are not always unique.
+
+Using append:
+1. Pandas is going to try to infer the best data types to use
+2. The append method doesn't change the underlying series. It returns a new series which is made up of the two appended together.
+3. When we query the appended series, we don't get a single value but a series itself.
+
+Data frame
+- similar to the series object, two dimensional series object: index and multiple columns of data
+- two-axes labeled array
+
+Creating data frames from:
+- group of series, each series represents a row of data
+- group of dictionaries, each dictionary represents a row of data
+
+We can extract data using iloc and loc attributes.
+Passing a single value to the loc indexing operator will return series it there is only one row to return.
+
+It is important to remember that the indices and column names could be non-unique.
+
+Chaining:
+You can chain operations together, but chaining can come with some costs and it is best avoided if you can use another approach.
+Chaining causes Pandas to return a copy of the DataFrame instead of a view on the DataFrame.
+
+Dropping:
+It is easy to delete data in series and DataFrames, and you can use drop function to do so.
+This function takes a single parameter (index or roll label) to drop.
+The drop function doesn't change the DataFrame by default. Instead, it returns a copy of the DataFrame with the given rows removed.
+Drop has two optional parameters:
+1. In place, if it's set to true, the DataFrame will be updated in place, instead of copy being returned.
+2. The axes, which should be dropped. By default, this value is 0, indicating the row axes. You could change it to 1 if you want to drop a column.
+
+Second way of dropping a column is directly through the use of the indexing operator, using the del keyword. This way takes immidiate effect on the DataFrame and does not return a view.
+
+Adding:
+Adding new column to the DataFrame is as easy as assigning it to some value using the assignment operator after the square brackets. This broadcasts the default value to the new column immediately.
+
+DataFrame Indexing and Loading
+
+!cat - Jupyter notebook sees a line beginning with an exclamation mark and it sends the rest of the line to the operating system shell for evaluation.
+
+read_csv - function for reading data into a DataFrame
+-we can use the index call to indicate which column should be indexed and we can use the header parameter to indicate which row from the data should be used as the header
+- skiprows parameter, to ignore unnecessary rows when importing data
+- .columns attribute- list of all the columns. We can change the values if the column names by iterating over this list and calling the rename method of the data frame
+
+Boolean mask- array which can be of one dimension like a series, or two dimensions like a data frame, where each of the values in the array are either true or false.
+- any cell alligned with the true value will be admitted into our final result
+
+The where function- takes a Boolean mask as a condition, applies it to the data frame or series, and returns a new data frame or series of the same shape.
+- the resulting data frame keeps the original indexed values, data which did not meet the condition have NaN instead
+
+Output of two Boolean masks being compared is another Boolean mask.
+
+.dropna - drop all the data with NaN as value
+
+Indexing Dataframes:
+Index is a row level label, and it corresponds to axis zero.
+
+Indices can either be:
+1. inferred, such as when we create a new series without an index, in which case we get numeric values
+2. set explicitly, like when we use the dictionary object to create the series, or when we loaded data from the csv file and specified the header
+
+.set_index - takes a list of columns and promotes those columns to an index. Set index is a destructive process which doesn't keep the current index.
+
+.reset_index - promotes the index into a column and creates a default numbered index
+
+Multi-level index - call an index and give it a list of columns that we're interested in promoting to an index. Pandas will search through these in order, finding the distinct data and forming composite indices.
+
+.unique - get all distinct values 
+
+When you use a Multiindex, you must provide the arguments in order by the level you wish to query.
+Inside of the index, each column is called a level and the outermost column is level zero.
+
+Missing values
+The built in loading from delimited files provides control for missing values in a few ways.
+1. na_values list - to indicate other strings which could refer to missing values.
+You can use na_filter option to turn off white space filtering, if white space is an actual calue of interest.
+2. fillna - this function takes a number of parameters, you could also pass in a single value which is called a scalar value to change all of the missing data to this one value.
+Two common fill values are ffill and bfill. ffill is for forward filling and it updates na value for a particular cell with the value from the previous row.
+
+In Pandas we can sort either by index or by values.
+
+When you use stastistical functions on DataFrames, they typically ignore missing values.
+

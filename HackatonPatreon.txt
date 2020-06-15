@@ -1,0 +1,51 @@
+The method the data was gathered under was not legal under US law, and included information meant to be private. Nevertheless, some of the data, before the hack, was already public, and this was the data we were interested in.
+
+The status of informed constent in big data, where data can be used for a variety of studies after collection for purposes not originally envisioned by the individuals providing the data.
+
+Edward Snowden - ACM (Association of Computing Machinery) debated the ethics of his action, and those of journalist Glenn Greenwald. Snowden's actions were illegal and a breach of both workplace ethics and rules.
+There was no greater good served by hacking the website. We could accomplish the research in other ways via other websites or collection methods.
+
+Rupert Murdoch's News Corporation in the UK, Hacking into citizens' cell phones - violated both journalistic ethics and the law, both people's privacy and their expectation of privacy were infringed upon.
+
+Parralel illegality and invasion of privacy of data cannot be overlooked.
+
+Making public information more widely public is not always viewed as appropriate by those to whom the data relates, as shown when a New York state newspaper published names and addresses of gun owners in their area. Showing that even instances of sharing and aggregating public data can cause an uproar.
+
+journalists have robust professional norms and well-established ethics codes that data science field lacks.
+
+Hacked data allows researchers to access data ultimately useful to public that companies are unvẃilling to share.
+
+Mark Burnett - clollected user IDs and passwords from logins found in illegal data dumps released by hackers. Released his collection of 10 million logins publicly in order to facilitate research. He stripped down the domain name from the logins, arguably providing more user security than the original data dumps.
+
+A year later, another group of security researchers released a method for releasing large login datasets that are sufficiently anonymized without harming the integrity and utility of data, and persuaded Yahoo to release password frequency data for 70 million users.
+
+The most mentioned issues were respect for the users and their constent or permission for our use of the data. One also mentioned how our use of the data might be construded as condoning illegal hacking.
+
+Issue of treating human beings not as annonymous, dehuminized research subjects or as a line of numbers in a file, but as human beings with feelings, autonomy and agency in their lives. Agency applies to their actions, the data they create and their ownership of that data.
+
+There is a question of audience expectation regarding the data's use.
+
+There are differences between online data and other, more traditional data types. Online data is easily found by anyone with an internet connection. Just because content is publicly accessible doesn't mean that it was meant to be consumed by just anyone.
+
+ARGUMENTS IN FAVOR OF USE:
+1. Data is public, like a newspaper
+2. We hope to serve the public good via our work
+3. This is the data we want, but we can't get it via other methods
+
+ARGUMENTS AGAINST USE:
+1. Researchers have a limited capability to distinguish between public and private information within the hacked data.
+2. May see private data when cleaning the data
+3. Perhaps legitimazing criminal activity
+4. Violating users' expectation of privacy
+5. Using people's data without consent
+6. We want this data, but we don't need it. Other data can be ethically colected and used
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+I agree with the author's decision not to use the hacked data, as the people whose data he would be using did not agree to share their data in this manner. I am aware that we are living in an information driven society, and that all of the online activity is being tracked and used for marketing and other purposes, but there are a lot of grey areas that should be considered and talked about before proceeding to set this kind of data use as a standard.
+Data science is a relatively new science, and the amount of data available right now is staggering, and getting larger every day. We should make great efforts to educate users about data collection practices and take their expectations of privacy into consideration when using any public data.
+Hacked data allows researchers to access data ultimately useful to public that companies are unwilling to share, but at the same time it could be legitimizing criminal activity and I would agree with the author's decision not to use it.
+
+
+
+
