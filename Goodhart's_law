@@ -1,0 +1,91 @@
+Goodhart's law
+Goodhart's law states that once a measure is turned into a target, it ceases to be a good measure. To introduce this idea, Kyle and Linh Da describe two classic examples.
+
+The first example describes a true a story from Hanoi, Vietnam when the country was under French rule. At the time, there was a problem of excessive rats. To solve this problem, the colonial regime created a bounty program that provided a cash reward for each rat killed. And as proof of the killing, citizens had to bring the tails of the rats killed. Although many people came to claim the cash reward, the number of rats in the city did not decrease. Colonial officials discovered that people weren’t killing the rats, but releasing back to the open so that they could procreate and produce more rates, thereby increasing the catcher’s revenue. As a consequence, the number of rats increased and the problem turned even worse.
+
+Another classic example comes from the British India, when authorities provided rewards for dead cobras as a way to decrease the population of cobras. However, this led some people to breed cobras to get more money. When authorities found this out, they revoked the rewards. So then the cobra breeders released the cobras into the country, which resulted in an increase in the cobra population density.
+
+A decision that produces an effect opposite to the initial purpose came to be known as the Cobra Effect. A closely related idea is Campbell’s Law, which states the following:
+
+    "The more any quantitative social indicator is used for social decision-making, the more subject it will be to corruption pressures and the more apt it will be to distort and corrupt the social processes it is intended to monitor."
+
+For example, when companies start to focus on a particular key performance indicator (KPI), the quality of that metric deteriorates. People can change the way they behave, so once they understand how they are being measured, the measure becomes useless as people seek to do well on the measure. 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Cobra effect - breeding and later releasing snakes for money
+Rat effect - breeding rats, tailless rats running around
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+SEO - page ranking alghoritm, based on incoming links on them.
+Trust rank
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Picking and improving KPIs
+Agile - big projects can suffer 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Stochastic noise that appears after trying to optimise something
+
+Examples:
+Spam filtering arms race
+Search engine ranking
+Clearing cookies to get better airline prices
+Keep account open to manipulate FICO score
+Retail discounting/couponing strategies
+Bidding in AdTech marketplace
+
+Cross Validation:
+Set production performance expectation
+Measure post deployment
+Total Deviation = deviation due to overfit
++ deviation due to incomplete training
++ deviation due to Gothard's law
+
+Measuring via Homogenity Assumption
+-> when the data was created? refitting model -> measuring drift
+
+Dealing with it:
+-Detection
+-Agile methodologies for model deployment
+- Experimentation
+
+Causal impact:
+- estimating the effect of a designed intervention on a time series
+- predicts counterfactual
+
+Self Fulfilling Prophecies:
+- relearn the bias of your training
+
+Fast iterations:
+- state updates
+- parameter tuning
+
+Explanatory power:
+- manifests only on a subset of instances
+- model interpretability for affected instances is key
+
+Interpretable Models
+"Why should I trust you" Ribiero, Singh, Guestrin
+
+Work to resolve it:
+Try to measure it in the data, 
+Work on explanatory models to mitigate
+Don't let the average case blind you
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+When we design a machine learning model or make changes to it, we need a way to determine if our solution is effective or is it just going to change the way people behave once they understand how they are being measured.
+
+For example, when companies start to focus on a particular key performance indicator (KPI), the quality of that metric deteriorates. To get around that, we could try to keep the KPIs secret so they don't alter the people's behavior.
+
+Other ways of dealing with Goodhart's law could include:
+
+    Trying to measure it in the data,
+    Working on explanatory models to mitigate it,
+    Not letting the average case blind you.
+
+Being aware of the Goodhard's law and its implications could help us to detect it and to estimate its effect on our data, as well as to predict counterfactuals.
+
+
+
+

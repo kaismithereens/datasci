@@ -1,0 +1,75 @@
+Row based querying:
+-iloc and loc attributes
+
+Column based querying:
+-using brackets on the object itself
+
+Boolean masking:
+-powerful filtering method which allows us to use broadcasting to determine what data should be kept in our analysis
+
+
+Merging data frames:
+Full outer join (union)
+Inner join (intersection)
+Left join 
+Right join
+
+-> .merge 
+
+Pandas idioms (pandorables)
+
+Chain indexing ][:
+-i.e. df.loc['Washtenaw']['Total Population']
+- generally bad practice
+- could be returning a copy or a view
+
+Method chaining:
+- returns a reference
+- can condense many different operations into one line of code
+
+.apply
+
+Group by:
+-This function takes some column name or names and splits the dataframe up into chunks based on those names, it returns a dataframe group by object which can be iterated upon
+- returns a tuple where the first item is the group condition,
+and the second item is the data frame reduced by that grouping. 
+
+- split apply combine pattern
+
+.agg method:
+- applies a function to the column or columns of data in the group and returns the result
+
+IMPORTANT NOTE:
+- series groupby and dataframe groupby behave differently with aggregate
+Scales:
+1. Ratio:
+- units are equally spaced
+- operations like +-/* are all valid
+2. Interval:
+- units are equally spaced, but there is no true zero
+3. Ordinal:
+- order of the units is important, but not evenly spaced
+4. Nominal:
+- categories of data, but the categories have no order with respect to one another
+
+.astype
+.cut
+
+Pivot tables:
+- a data frame, where the rows represent one variable that
+you're interested in, the columns another, and the cell's some aggregate value.
+
+.pivot_table
+
+Date funcionality:
+Timestamp
+Period
+Period Index
+DateTime Index
+Timedelta
+
+.date_range
+.diff
+.resample
+.asfreq
+
